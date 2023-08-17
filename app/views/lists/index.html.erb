@@ -1,0 +1,17 @@
+<div class="container">
+
+  <h1>My Lists of Movies :</h1>
+
+  <div id="lists_of_movies">
+    <% @lists.each do |list_of_movies| %>
+      <%= list_of_movies.name %>
+      <p>
+        <%= link_to 'Show this list', list_of_movies, class: "btn btn-primary" %>
+      </p>
+    <% end %>
+        <p>
+          <%= link_to 'Create new list', new_list_path, class: "btn btn-primary" %>
+      </p>
+  </div>
+
+</div>
